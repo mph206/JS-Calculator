@@ -122,4 +122,9 @@
 #calculator #buttons div.operator {
   background-color: #4C4D4F;
 }
+
+p {
+  text-align: center;
+  font-size: 20px;
+}
 /*# sourceMappingURL=styles.css.map */
