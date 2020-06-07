@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Calc</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cute+Font&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+</head>
+<body>
+    <main>
+        <div id="calculator">
+            <section id="display">
+                <div id="display-sum"></div>
+                <div id="display-total">0</div>
+            </section>
+            <section id="buttons">
+                <section id="num-grid">
+                    <div accesskey="7" class="number">7</div>
+                    <div accesskey="8" class="number">8</div>
+                    <div accesskey="9" class="number">9</div>
+                    <div accesskey="4" class="number">4</div>
+                    <div accesskey="5" class="number">5</div>
+                    <div accesskey="6" class="number">6</div>
+                    <div accesskey="1" class="number">1</div>
+                    <div accesskey="2" class="number">2</div>
+                    <div accesskey="3" class="number">3</div>
+                    <div accesskey="0" class="number">0</div>
+                    <div accesskey="." class="number">.</div>
+                    <div accesskey="=" class="operator" id="equals">=</div>
+                </section>
+                <section id="operator-flex">
+                    <div accesskey="c" id="ac">AC</div>
+                    <div accesskey="/" class="operator">&divide</div>
+                    <div accesskey="*" class="operator">&times</div>
+                    <div accesskey="-" class="operator">-</div>
+                    <div accesskey="+" class="operator">+</div>
+                </section>
+            </section>
+        </div>
+        <p>To type the numbers or operators hold Ctrl + Alt (Mac), or Alt (Windows)</p>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>

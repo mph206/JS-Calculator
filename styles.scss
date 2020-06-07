@@ -1,0 +1,114 @@
+* {
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+
+
+#calculator {
+  width: 450px;
+  border-radius: 15px;
+  box-shadow: 8px 8px #767066;
+  background-color: #505050;
+  margin: 20px auto;
+  vertical-align: middle;
+
+  #display {
+    width: 100%;
+    background-color: aqua;
+    text-align: right;
+    padding: 20px 10px 15px 10px;
+    border: 2px solid black;
+    background-color: #3A3D3C;
+    border-radius: 15px 15px 0 0;
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    
+    #display-sum {
+      background-color: #98A89D;
+      padding: 10px 10px 0px;
+      font-size: 30px;
+      height: 40px;
+      overflow: scroll;
+    }
+
+    #display-total {
+      background-color: #98A89D;
+      padding: 0px 10px 10px;
+      padding-top: 5px;
+      font-size: 60px;
+      line-height: 60px;
+      overflow: scroll;
+    }
+  }
+
+  #buttons {
+
+    display: flex;    
+    padding: 10px 10px 20px 10px;
+    justify-content: center;
+    // align-items: center;
+    font-family: 'Bitter', serif;
+    font-size: 35px;
+
+    #num-grid {
+      display: grid;
+      height: 350px;
+      width: 300px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+
+      div {
+        height:70px;
+        line-height: 70px;
+      }
+    }
+
+    #operator-flex {
+      display: flex;
+      flex-direction: column;
+      width: 87px;
+      // margin-bottom: 10px;
+      
+      div {
+        height: 20%;
+        margin-top: 20px;
+        
+        &#ac {
+          margin-top: 0;
+        }
+      }
+    }
+
+    div {
+      width: 100%;
+      border: 2px solid black;
+      text-align: center;
+      vertical-align: middle;
+      color: white;
+      box-shadow: 5px 5px #12110E;
+      border-radius: 3px;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &:focus, 
+      &:active {
+        transform: translate(4px, 4px);
+        box-shadow: 1px 1px black;
+      }
+
+      &#AC {
+        background-color: #E48746;
+      }
+
+      &.number {
+        background-color: #6C6661;
+      }
+
+      &.operator {
+        background-color: #4C4D4F;
+      }
+    }
+  }
+}
